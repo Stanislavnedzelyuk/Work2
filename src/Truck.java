@@ -1,4 +1,4 @@
-class Truck extends Vehicle {
+class Truck extends Vehicle implements MotorCheck, TrailerCheck {
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }

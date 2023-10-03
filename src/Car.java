@@ -1,7 +1,7 @@
-class Car extends Vehicle {
-    public Car(String modelName, int wheelsCount) {
+class  Car extends Vehicle implements MotorCheck {
+public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
-    }
+        }
 
     @Override
     public void updateTyre() {

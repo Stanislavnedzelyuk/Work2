@@ -4,7 +4,13 @@ class ServiceStation {
         for (int i = 0; i < vehicle.getWheelsCount(); i++) {
             vehicle.updateTyre();
         }
-        vehicle.checkEngine();
-        vehicle.checkTrailer();
+
+        if (vehicle instanceof MotorCheck) {
+            ((MotorCheck) vehicle).checkEngine();
+        }
+
+        if (vehicle instanceof TrailerCheck) {
+            ((TrailerCheck) vehicle).checkTrailer();
+        }
     }
 }

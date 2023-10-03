@@ -35,11 +35,12 @@ abstract class Vehicle {
     }
 
     public abstract void updateTyre();
+}
 
-    public void checkEngine() {
+interface MotorCheck {
+    void checkEngine();
+}
 
-    }
-    public void checkTrailer() {
-
-    }
+interface TrailerCheck {
+    void checkTrailer();
 }
